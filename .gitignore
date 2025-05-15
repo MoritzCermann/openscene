@@ -133,3 +133,7 @@ dmypy.json
 out
 3rdParty
 initmodel
+
+# ignore large .npy files in demo
+demo/openscene_features/*.npy
+demo/region_segmentations/*.ply
