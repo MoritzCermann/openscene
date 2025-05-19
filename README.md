@@ -211,7 +211,7 @@ For available distillation options, please take a look at `DISTILL` inside `conf
 2. Follow the [feature fusion instruction](./scripts/feature_fusion/README.md), modify codes to obtain multi-view fused features.
 3. You can distill a model on your own, or take our provided 3D distilled model weights (e.g. our 3D model for ScanNet or Matterport3D), and modify the `model_path` accordingly.
 4. If you want to evaluate on a specific labelset, change the `labelset` in config.
-
+5. If you want to generate semantic labels or use the computed features for scene understanding on your custom dataset, follow the [inference instruction](./run/README.md).
 
 ## Applications
 Besides the zero-shot 3D semantic segmentation, we can perform also the following tasks:

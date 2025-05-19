@@ -48,6 +48,11 @@ MATTERPORT_LABELS_160 = ('wall', 'door', 'ceiling', 'floor', 'picture', 'window'
                             'foot rest', 'soap dish', 'placemat', 'cleaner', 'computer', 'knob', 'paper', 'projector', 'coat hanger', 
                             'case', 'pan', 'luggage', 'trinket', 'chimney', 'person', 'alarm')
 
+CUSTOM_LABELS_18 = ( # Your custom labelset
+    'tree', 'bush', 'grass', 'road', 'roundabout', 'roof', 'solarpanel', 'car', 'parking', 'window', 
+    'billboard', 'truck', 'trafficsign', 'housewall', 'manholecover', 'stairs', 'garage', 'bus'
+)
+
 NUSCENES_LABELS_16 = ('barrier', 'bicycle', 'bus', 'car', 'construction vehicle', 'motorcycle', 'person', 'traffic cone',
                       'trailer', 'truck', 'drivable surface', 'other flat', 'sidewalk', 'terrain', 'manmade', 'vegetation')
 
@@ -308,4 +313,26 @@ MATTERPORT_COLOR_MAP_160 = {
     1190: (72., 185., 134.),
     1191: (42., 94., 198.),
     1200: (0, 0, 0)
+}
+
+CUSTOM_COLOR_MAP_18 = { # Your custom color map
+    1: (174., 199., 232.), #tree
+    2: (152., 223., 138.), # bush
+    3: (31., 119., 180.), # grass
+    4: (255., 187., 120.), # road
+    5: (188., 189., 34.), # roundabout
+    6: (140., 86., 75.), # roof
+    7: (255., 152., 150.), # solarpanel
+    8: (214., 39., 40.), # car
+    9: (197., 176., 213.), # parking
+    10: (148., 103., 189.), # window
+    11: (196., 156., 148.), # billboard
+    12: (23., 190., 207.), # truck
+    13: (247., 182., 210.), # trafficsign
+    14: (219., 219., 141.), # wall
+    15: (255., 127., 14.), # manholecover
+    16: (158., 218., 229.), # stairs
+    17: (44., 160., 44.), # garage
+    18: (112., 128., 144.), # bus
+    0: (0., 0., 0.), # unlabeled
 }
