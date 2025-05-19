@@ -74,10 +74,12 @@ class Point3DLoader(torch.utils.data.Dataset):
                  ):
         super().__init__()
         self.split = split
+        self.identifier = identifier
         if split is None:
             split = ''
-        self.identifier = identifier
-        self.data_paths = sorted(glob(join(datapath_prefix, split, '*.pth')))
+            self.data_paths = sorted(glob(join(datapath_prefix, '*.pth')))
+        else:
+            self.data_paths = sorted(glob(join(datapath_prefix, split, '*.pth')))
         if len(self.data_paths) == 0:
             raise Exception('0 file is loaded in the point loader.')
 
